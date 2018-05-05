@@ -5,9 +5,12 @@
 // *** Dependencies
 // =============================================================
 var express = require("express")
+var expressValidator = require('express-validator')
 var bodyParser = require("body-parser")
 var path = require('path')
 var passport = require('passport')
+var bcrypt = require('bcrypt')
+var saltRounds = 10
 
 // Sets up the Express App
 // =============================================================
@@ -17,13 +20,10 @@ var PORT = process.env.PORT || 3000
 // Requiring our models for syncing
 var db = require("./models")
 
-// Sets up the Express app to handle data parsing
-
-
 // middleware
 app.use(bodyParser.urlencoded({ extended: true }))
+// Sets up the Express app to handle data parsing
 app.use(bodyParser.json())
-
 // Static directory
 app.use(express.static("./public"))
 
@@ -31,11 +31,11 @@ app.use(express.static("./public"))
 app.use(passport.initialize())
 app.use(passport.session())
 
-app.get("/login", passport.authenticate('local', {
-    failureRedirect: '/login'
-}), function (req, res) {
-    res.redirect('/login')
-})
+// app.get("/login", passport.authenticate('local', {
+//     failureRedirect: '/login'
+// }), function (req, res) {
+//     res.redirect('/login')
+// })
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app)
