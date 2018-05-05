@@ -11,14 +11,14 @@ module.exports = function (app) {
 
 // GET route for getting all of the posts - READ
 app.get("/api/posts", function (req, res) {
-  db.userLogin.findAll({}).then(function (r) {
+  db.register.findAll({}).then(function (r) {
     res.json(r)
   })
 })
 
 // POST route for holding new user's registration info
 app.post("/api/posts", function (req, res) {
-  db.userLogin.create({
+  db.register.create({
     userName: req.body.userName,
     firstName: req.body.firstName,
     lastName: req.body.lastName,

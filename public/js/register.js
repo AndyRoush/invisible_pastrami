@@ -12,8 +12,7 @@ $(document).ready(function () {
         event.preventDefault()
         // Condition: will not submit the post if we are missing a body 
         if (!firstName.val().trim() && !lastName.val().trim() && !userName.val().trim() && !password.val().trim() && !email.val().trim()) {
-            console.log('not all fields completed')
-          return
+            return
         }
         // Constructing a newPost object to hand to the database
         var newPost = {
@@ -29,6 +28,8 @@ $(document).ready(function () {
     })
 
     function submitPost(Post) {
-        $.post("/api/posts/", Post, function (data) {})
+        $.post("/api/posts/", Post, function (data) {
+            window.location.href = "/login"
+        })
     }
 })
