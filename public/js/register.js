@@ -8,20 +8,19 @@ $(document).ready(function () {
     var posts
 
     // Adding an event listener for when the form is submitted
-    $("#register").on("submit", function handleFormSubmit(event) {
+    $(".submitBTN").on("click", function handleFormSubmit(event) {
         event.preventDefault()
-        // Condition: will not submit the post if we are missing a body 
-        if (!firstName.val().trim() && !lastName.val().trim() && !userName.val().trim() && !password.val().trim() && !email.val().trim()) {
+        // Condition: will not submit the post 
+        if (!firstName.val() && !lastName.val() && !userName.val() && !password.val() && !email.val()){
             return
         }
         // Constructing a newPost object to hand to the database
         var newPost = {
-            firstName: firstName.val().trim(),
-            lastName: lastName.val().trim(),
-            userName: userName.val().trim(),
-            password: password.val().trim(),
-            email: email.val().trim(),
-            trainer: false
+            userName: userName.val(),
+            firstName: firstName.val(),
+            lastName: lastName.val(),
+            email: email.val(),
+            password: password.val(),
         }
         // Run submitPost to create a whole new post
         submitPost(newPost);
