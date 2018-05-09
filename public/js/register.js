@@ -10,7 +10,6 @@ $(document).ready(function () {
     // Adding an event listener for when the form is submitted
     $(".submitBTN").on("click", function handleFormSubmit(event) {
         event.preventDefault()
-        
         // Constructing a newPost object to hand to the database
         var newPost = {
             userName: userName.val(),
@@ -23,9 +22,10 @@ $(document).ready(function () {
         submitPost(newPost);
     })
 
+
     function submitPost(Post) {
         $.post("/api/posts/", Post, function (data) {
-            window.location.href = "/login"
+            window.location.href = "/survey"
         })
     }
 })

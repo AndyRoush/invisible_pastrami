@@ -9,7 +9,6 @@ CREATE TABLE reqdotbody_db.register (
     userName VARCHAR(30) NOT NULL,
     password VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    -- Weight loss, bulking, toning
     firstName VARCHAR(30) NOT NULL,
     lastName VARCHAR(30) NOT NULL,
     trainer BOOLEAN NOT NULL
