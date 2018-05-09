@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Materialize -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <!-- AOS CDN -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- style.css link -->
+    <link rel="stylesheet" type="text/css" href="public/css/style.css">
+
+    <title>Req.Body</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="header center-align">Congratulations on signing up!</h2>
+        <h4 class="header center-align">Please fill out the information below so we can get you going.</h4>
+    </div>
+    <div class="container main-questions">
+
+
+        <!-- name -->
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Name</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- birthday **** NOT WORKING ****-->
+        <!-- <input type="text" class="datepicker"> -->
+
+        <!-- Gender -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+            </select>
+            <label>Please select your gender</label>
+        </div>
+        <br>
+
+        <!-- goals -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Lose weight</option>
+                <option value="2">Gain size</option>
+                <option value="3">Overall Athleticism</option>
+            </select>
+            <label>What are your goals?</label>
+        </div>
+        <br>
+        <!-- gym or home -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">At home</option>
+                <option value="2">At a gym</option>
+            </select>
+            <label>Where do you work out?</label>
+        </div>
+        <br>
+        <!-- Dietary preference -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Gluten Free</option>
+                <option value="2">Vegan</option>
+                <option value="3">Vegetarian</option>
+                <option value="4">Pescetarian</option>
+                <option value="5">Paleo</option>
+                <option value="6">Keto</option>
+                <option value="7">None</option>
+            </select>
+            <label>Dietary preference</label>
+        </div>
+        <br>
+        <!-- Trainer or client -->
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Trainer</option>
+                <option value="2">Client</option>
+            </select>
+            <label>Are you a trainer or Client?</label>
+        </div>
+        <br>
+        <!-- Uploading an image -->
+        <form action="#">
+            <div class="file-field input-field">
+                <div class="btn black">
+                    <span>Upload image</span>
+                    <input type="file">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text">
+                </div>
+            </div>
+        </form>
+        <br>
+        <!-- Additional notes -->
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Extra notes</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <!-- Submit button -->
+        <div class="container center-align">
+                <a class="waves-effect waves-light btn center red" id='signupButton'>Submit</a>
+            </div>
+
+    </div>
+
+
+
+
+    <!-- AOS CDN -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+    <!-- js link -->
+    <script type="text/javascript" src="public/js/main.js"></script>
+
+
+
+</body>
+
+</html>

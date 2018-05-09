@@ -1,0 +1,26 @@
+.tall {
+    background-color: teal;
+    height: 50em;
+    padding-left: 0.5em;
+}
+
+.short {
+    background-color: sienna;
+    height: 20em;
+
+    margin-left: 10%;
+}
+
+.smalltall {
+    margin-left: 2%;
+    margin-right: 2%
+}
+
+.card{
+    height: 175px;
+    width: 200px;
+}
+
+.name {
+    padding-left : 5%;
+}
