@@ -20,6 +20,7 @@ function getRequest(searchInput) {
 }
 
 function showResults(results) {
+    $('.results').empty()
     var html = "";
     var entries = results.items;
     $.each(entries, function (index, value) {
