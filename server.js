@@ -8,9 +8,26 @@ var express = require("express")
 var expressValidator = require('express-validator')
 var bodyParser = require("body-parser")
 var path = require('path')
+require('dotenv').config()
 var passport = require('passport')
 var bcrypt = require('bcrypt')
 var saltRounds = 10
+var path = require('path')
+
+// require('dotenv').config()
+// var search = require('youtube-search');
+// var youtube = require('youtube-iframe-player');
+
+// var opts = {
+//   maxResults: 10,
+//   key: process.env.YOUTUBE_API
+// };
+ 
+// search('biceps', opts, function(err, results) {
+//   if(err) return console.log(err);
+//   console.log(results[0].id);
+// });
+
 
 // Sets up the Express App
 // =============================================================
@@ -31,16 +48,11 @@ app.use(express.static("./public"))
 app.use(passport.initialize())
 app.use(passport.session())
 
-// app.get("/login", passport.authenticate('local', {
-//     failureRedirect: '/login'
-// }), function (req, res) {
-//     res.redirect('/login')
-// })
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app)
 require("./routes/api-routes.js")(app)
-// require("./routes/login.js")(app)
+
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
