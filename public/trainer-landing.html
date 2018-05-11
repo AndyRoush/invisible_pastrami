@@ -58,8 +58,32 @@
           </div>
           <div class="divider"></div>
           <div class="section">
-            <h5>Section 3</h5>
-            <p>Stuff</p>
+            <h5>CHAT with Client</h5>
+<!-- chat scrypt -->
+   <!-- //username entry -->
+   <div id="nickWrap">
+      <p>Enter a username: </p>
+      <p id="nickError"></p>
+      <form id="setNick">
+          <input size="35" id="nickname"></input>
+          <input type="submit"></input>
+      </form>
+  </div>
+  <!-- //chat  -->
+  <div id="contentWrap">
+      <div id="chatWrap">
+
+          <div id="chat"></div>
+          <form id="send-message">
+              <input size="35" id="message"></input>
+              <input type="submit"></input>
+          </form>
+      </div>
+      <div id="users"></div>
+  </div>
+  
+  <!-- end chat scrypt -->
+
           </div>
       </div>  
   </div>
@@ -136,7 +160,8 @@
 </div>
 
 
-
+<!-- Socket IO CDN -->
+<script src="/socket.io/socket.io.js"></script>
     <!-- AOS CDN -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- Jquery CDN -->
@@ -145,6 +170,62 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     <!-- js link -->
     <script type="text/javascript" src="js/trainer-landing.js"></script>
+
+<!-- script for chat -->
+
+    <script>
+        
+        $( document ).ready(function() {
+        console.log( "ready!" );
+        var socket = io.connect()
+        var nickForm = $('#setNick')
+        var nickError = $('#nickError')
+        var nickBox = $('#nickname')
+        var $users = $('#users')
+        var $messageForm = $('#send-message')
+        var $messageBox = $('#message')
+        var $chat = $('#chat')
+    
+
+$(nickForm).submit(function(e){
+    e.preventDefault()
+    socket.emit('new-user', $(nickBox).val(), function(data){
+        if(data) {
+            $('#nickWrap').hide()
+            $('#contentWrap').show()
+        } else {
+            $(nickError).html('That username is already taken! Try again')
+        }
+    })
+    $(nickBox).val('')
+})
+
+socket.on('usernames', function(data){
+    var html = ''
+    for(i=0; i < data.length; i++){
+        html += data [i] + '<br/>'
+    }
+    $users.html(html)
+})
+
+
+        $messageForm.submit(function(e) {
+            e.preventDefault()
+            socket.emit('send-message', $messageBox.val())
+            $messageBox.val('')
+        })
+    
+        socket.on('new-message', function(data){
+            $(chat).append('<b>' + data.nick + ': </b>' + data.msg + "<br/>")
+        })
+    });
+        
+        
+    </script>
+    <!-- end chat script -->
+    
+    
+    
 
 
 </body>
