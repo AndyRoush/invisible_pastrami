@@ -21,6 +21,7 @@
     "mysql2": "^1.5.3",
     "passport": "^0.4.0",
     "sequelize": "^4.37.6",
+    "socket.io": "^2.1.0",
     "youtube-iframe-player": "^1.0.1",
     "youtube-search": "^1.1.0"
   }
