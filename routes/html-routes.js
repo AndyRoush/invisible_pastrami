@@ -14,6 +14,9 @@ module.exports = function (app) {
   app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/homepage.html"))
   })
+  app.get("/homepage", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/homepage.html"))
+  })
 
   app.get("/login", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/login.html"))
@@ -28,7 +31,7 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/client-landing.html"))
   })
   app.get("/trainer-landing", function (req, res) {
-    res.sendFile(path.join(__dirname, "../public/training-landing.html"))
+    res.sendFile(path.join(__dirname, "../public/trainer-landing.html"))
   })
   app.get("/videos", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/videos.html"))

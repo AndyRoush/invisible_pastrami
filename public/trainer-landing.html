@@ -2,107 +2,138 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Materialize -->
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-    <!-- AOS CDN -->
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <!-- style.css link -->
-    <link rel="stylesheet" type="text/css" href="css/trainer.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Materialize -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <!-- AOS CDN -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <!-- style.css link -->
+  <link rel="stylesheet" type="text/css" href="css/trainer.css">
 
-    <title>Req.Body</title>
+  <title>Req.Body</title>
 </head>
 
 <body>
-
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="name">Name</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="sass.html">Sass</a>
-                </li>
-                <li>
-                    <a href="badges.html">Components</a>
-                </li>
-                <li>
-                    <a href="collapsible.html">JavaScript</a>
-                </li>
-            </ul>
-        </div>
+  <!-- nav -->
+  <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
+        <ul class="left hide-on-med-and-down">
+          <li><i class="material-icons center" id="blue">home</i></li>
+          <li><i class="material-icons center">face</i></li>
+          <li><a href="badges.html">Clients</a></li>
+          <li><a href="collapsible.html">Workout Manager</a></li>
+          <li><a href="mobile.html">Nutrition Manager</a></li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#" id="right-nav">5:35 p.m.</a></li>
+            <li><i class="material-icons center" id="right-nav">notifications</i></li>
+          </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
+          <li><a href="mobile.html">Mobile</a></li>
+        </ul>
+      </div>
     </nav>
 
-
-    <div class="row">
-        <div class="col s12">This div is 12-columns wide on all screen sizes</div>
-        <div class="col s6">6-columns (one-half)</div>
-        <div class="col s6">6-columns (one-half)</div>
-    </div>
-    <div class="row">
-        <div class="col s6">6-columns (one-half)</div>
-    </div>
-    <div class="smalltall">
-        <div class="row">
-            <div class="col s2 tall">
-                <p class="center">6-columns (one-half)</p>
-                <hr>
-                <p class="center"> More stuff</p>
-                <hr>
-                <p>More stuff</p>
-                <hr>
-                <p>More stuff</p>
-
-
-            </div>
-            <div class="col s1"> middle nothing</div>
-            <div class="col s9 short">
-                <div class="row">
-                    <div class="col s2 m2">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://blueprintfitnessatlanta.com/wp-content/uploads/2017/08/workout-1.jpg">
-                                <span class="card-title">Chest</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                    <i class="material-icons">add</i>
-                                </a>
-                            </div>
-                            <div class="card-content">
-                                <p>Chest workout</p>
-                            </div>
-                        </div>
+<div class="row">
+  <div class="col s2 side">
+    <div class="side-content">
+        <div class="section">
+            <h5>Section 1</h5>
+            <p>Stuff</p>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h5>Section 2</h5>
+            <p>Stuff</p>
+          </div>
+          <div class="divider"></div>
+          <div class="section">
+            <h5>Section 3</h5>
+            <p>Stuff</p>
+          </div>
+      </div>  
+  </div>
+  <div class="col s7 mid">
+    <div class="mid-content">
+        <h6 id="activity">Activity</h6>
+              <div class="card-panel grey lighten-5 z-depth-1">
+                <div class="row valign-wrapper">
+                  <div class="col s2">
+                    <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                  </div>
+                  <div class="col s10">
+                    <span class="black-text">
+                      This is a square image. Add the "circle" class to it to make it appear circular.
+                    </span>
+                  </div>
+                </div>
+              </div>
 
 
+              <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s2">
+                      <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
                     </div>
-
-                    <div class="col s2 m6">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="https://blueprintfitnessatlanta.com/wp-content/uploads/2017/08/workout-1.jpg">
-                                <span class="card-title">Chest</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light red">
-                                    <i class="material-icons">add</i>
-                                </a>
-                            </div>
-                            <div class="card-content">
-                                <p>Chest workout</p>
-                            </div>
-                        </div>
-
-
+                    <div class="col s10">
+                      <span class="black-text">
+                        This is a square image. Add the "circle" class to it to make it appear circular.
+                      </span>
                     </div>
+                  </div>
                 </div>
 
 
-            </div>
+                <div class="card-panel grey lighten-5 z-depth-1">
+                    <div class="row valign-wrapper">
+                      <div class="col s2">
+                        <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                      </div>
+                      <div class="col s10">
+                        <span class="black-text">
+                          This is a square image. Add the "circle" class to it to make it appear circular.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card-panel grey lighten-5 z-depth-1">
+                      <div class="row valign-wrapper">
+                        <div class="col s2">
+                          <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                        </div>
+                        <div class="col s10">
+                          <span class="black-text">
+                            This is a square image. Add the "circle" class to it to make it appear circular.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
         </div>
-    </div>d
-
-
+  </div>
+  <div class="col s3 rss-feed">
+    <h4 class="center">RSS-FEED</h4>
+    <div class="rss-feed-content">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut officia pariatur et odit unde beatae facilis, dolore ipsum iste. Eos adipisci iste consequuntur, vero earum veritatis ipsum fuga soluta necessitatibus!
+    Autem expedita, officia voluptatum accusantium quisquam aliquam et quo eligendi adipisci hic quis rerum, id reprehenderit neque dolorum accusamus. Quaerat sequi ea soluta, porro optio ducimus qui quibusdam architecto commodi!
+    Veniam dicta fuga autem voluptatem. Voluptatem unde illum perspiciatis cum vel. Cumque nostrum quidem reprehenderit aut ea repellat excepturi qui enim blanditiis possimus voluptas ullam porro aliquid, temporibus corrupti error?
+    Deserunt nostrum quos adipisci ipsam qui laboriosam cumque, voluptatibus ipsa earum? Provident eos nemo, dolorum commodi voluptatibus fugit unde laboriosam culpa minus! Corrupti impedit sunt, ducimus porro praesentium eligendi quibusdam.
+    Dolorem odit accusamus similique quis debitis harum magni consequuntur laborum, ducimus velit nemo pariatur quo unde vel excepturi adipisci, qui necessitatibus cum soluta perferendis. Mollitia molestias minima maxime cum earum?
+    Sapiente minus totam ratione porro suscipit consequatur recusandae, qui laboriosam ea tenetur et enim quo ducimus quia ex hic, repellat vitae cumque pariatur quod dolorem aperiam nulla voluptatibus. Quae, commodi?</p>
+  </div>
+</div>
 
 
 
@@ -113,9 +144,12 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     <!-- js link -->
-    <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="js/trainer-landing.js"></script>
 
 
 </body>
 
 </html>
+
+
+Add Comment
