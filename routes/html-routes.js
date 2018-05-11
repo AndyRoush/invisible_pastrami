@@ -36,6 +36,9 @@ module.exports = function (app) {
   app.get("/videos", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/videos.html"))
   })
+  app.get("/nutrition", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/nutrition.html"))
+  })
 
 
 

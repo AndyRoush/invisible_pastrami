@@ -64,14 +64,14 @@ db.sequelize.sync({ force: true }).then(function() {
 
 // chat script
 var express = require('express')
-app = express()
+app1 = express()
 server = require('http').createServer(app)
 io = require('socket.io').listen(server)
 nicknames = []
 
-server.listen(3000)
+// server.listen(3000)
 
-app.get('/', function(req, res){
+app1.get('/', function(req, res){
 res.sendFile(__dirname + '/public/trainer-landing.html')
 })
 

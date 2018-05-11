@@ -21,147 +21,180 @@
 <body>
   <!-- nav -->
   <nav>
-      <div class="nav-wrapper">
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
-        <ul class="left hide-on-med-and-down">
-          <li><i class="material-icons center" id="blue">home</i></li>
-          <li><i class="material-icons center">face</i></li>
-          <li><a href="badges.html">Clients</a></li>
-          <li><a href="collapsible.html">Workout Manager</a></li>
-          <li><a href="mobile.html">Nutrition Manager</a></li>
-        </ul>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#" id="right-nav">5:35 p.m.</a></li>
-            <li><i class="material-icons center" id="right-nav">notifications</i></li>
-          </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <i class="material-icons center" id="blue">home</i>
+        </li>
+        <li>
+          <i class="material-icons center">face</i>
+        </li>
+        <li>
+          <a href="badges.html">Clients</a>
+        </li>
+        <li>
+          <a href="collapsible.html">Workout Manager</a>
+        </li>
+        <li>
+          <a href="mobile.html">Nutrition Manager</a>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#" id="right-nav">5:35 p.m.</a>
+        </li>
+        <li>
+          <i class="material-icons center" id="right-nav">notifications</i>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="sass.html">Sass</a>
+        </li>
+        <li>
+          <a href="badges.html">Components</a>
+        </li>
+        <li>
+          <a href="collapsible.html">Javascript</a>
+        </li>
+        <li>
+          <a href="mobile.html">Mobile</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<div class="row">
-  <div class="col s2 side">
-    <div class="side-content">
+  <div class="row">
+    <div class="col s2 side">
+      <div class="side-content">
         <div class="section">
-            <h5>Section 1</h5>
-            <p>Stuff</p>
-          </div>
-          <div class="divider"></div>
-          <div class="section">
-            <h5>Section 2</h5>
-            <p>Stuff</p>
-          </div>
-          <div class="divider"></div>
-          <div class="section">
-            <h5>CHAT with Client</h5>
-<!-- chat scrypt -->
-   <!-- //username entry -->
-   <div id="nickWrap">
-      <p>Enter a username: </p>
-      <p id="nickError"></p>
-      <form id="setNick">
-          <input size="35" id="nickname"></input>
-          <input type="submit"></input>
-      </form>
-  </div>
-  <!-- //chat  -->
-  <div id="contentWrap">
-      <div id="chatWrap">
-
-          <div id="chat"></div>
-          <form id="send-message">
-              <input size="35" id="message"></input>
+          <h5>Section 1</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 2</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>CHAT with Client</h5>
+          <!-- chat scrypt -->
+          <!-- //username entry -->
+          <div id="nickWrap">
+            <p>Enter a username: </p>
+            <p id="nickError"></p>
+            <form id="setNick">
+              <input size="35" id="nickname"></input>
               <input type="submit"></input>
-          </form>
-      </div>
-      <div id="users"></div>
-  </div>
-  
-  <!-- end chat scrypt -->
-
+            </form>
           </div>
-      </div>  
-  </div>
-  <div class="col s7 mid">
-    <div class="mid-content">
-        <h6 id="activity">Activity</h6>
-              <div class="card-panel grey lighten-5 z-depth-1">
-                <div class="row valign-wrapper">
-                  <div class="col s2">
-                    <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                  </div>
-                  <div class="col s10">
-                    <span class="black-text">
-                      This is a square image. Add the "circle" class to it to make it appear circular.
-                    </span>
-                  </div>
-                </div>
-              </div>
+          <!-- //chat  -->
+          <div id="contentWrap">
+            <div id="chatWrap">
 
+              <div id="chat"></div>
+              <form id="send-message">
+                <input size="35" id="message"></input>
+                <input type="submit"></input>
+              </form>
+            </div>
+            <div id="users"></div>
+          </div>
 
-              <div class="card-panel grey lighten-5 z-depth-1">
-                  <div class="row valign-wrapper">
-                    <div class="col s2">
-                      <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                    </div>
-                    <div class="col s10">
-                      <span class="black-text">
-                        This is a square image. Add the "circle" class to it to make it appear circular.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="card-panel grey lighten-5 z-depth-1">
-                    <div class="row valign-wrapper">
-                      <div class="col s2">
-                        <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                      </div>
-                      <div class="col s10">
-                        <span class="black-text">
-                          This is a square image. Add the "circle" class to it to make it appear circular.
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="card-panel grey lighten-5 z-depth-1">
-                      <div class="row valign-wrapper">
-                        <div class="col s2">
-                          <img src="images/workout1.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                        </div>
-                        <div class="col s10">
-                          <span class="black-text">
-                            This is a square image. Add the "circle" class to it to make it appear circular.
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+          <!-- end chat scrypt -->
 
         </div>
-  </div>
-  <div class="col s3 rss-feed">
-    <h4 class="center">RSS-FEED</h4>
-    <div class="rss-feed-content">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut officia pariatur et odit unde beatae facilis, dolore ipsum iste. Eos adipisci iste consequuntur, vero earum veritatis ipsum fuga soluta necessitatibus!
-    Autem expedita, officia voluptatum accusantium quisquam aliquam et quo eligendi adipisci hic quis rerum, id reprehenderit neque dolorum accusamus. Quaerat sequi ea soluta, porro optio ducimus qui quibusdam architecto commodi!
-    Veniam dicta fuga autem voluptatem. Voluptatem unde illum perspiciatis cum vel. Cumque nostrum quidem reprehenderit aut ea repellat excepturi qui enim blanditiis possimus voluptas ullam porro aliquid, temporibus corrupti error?
-    Deserunt nostrum quos adipisci ipsam qui laboriosam cumque, voluptatibus ipsa earum? Provident eos nemo, dolorum commodi voluptatibus fugit unde laboriosam culpa minus! Corrupti impedit sunt, ducimus porro praesentium eligendi quibusdam.
-    Dolorem odit accusamus similique quis debitis harum magni consequuntur laborum, ducimus velit nemo pariatur quo unde vel excepturi adipisci, qui necessitatibus cum soluta perferendis. Mollitia molestias minima maxime cum earum?
-    Sapiente minus totam ratione porro suscipit consequatur recusandae, qui laboriosam ea tenetur et enim quo ducimus quia ex hic, repellat vitae cumque pariatur quod dolorem aperiam nulla voluptatibus. Quae, commodi?</p>
-  </div>
-</div>
+      </div>
+    </div>
+    <div class="col s7 mid">
+      <div class="mid-content">
+        <h6 id="activity">Activity</h6>
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
 
 
-<!-- Socket IO CDN -->
-<script src="/socket.io/socket.io.js"></script>
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s10">
+              <span class="black-text">
+                This is a square image. Add the "circle" class to it to make it appear circular.
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col s3 rss-feed">
+      <h4 class="center">RSS-FEED</h4>
+      <div class="rss-feed-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut officia pariatur et odit unde beatae facilis, dolore
+          ipsum iste. Eos adipisci iste consequuntur, vero earum veritatis ipsum fuga soluta necessitatibus! Autem expedita,
+          officia voluptatum accusantium quisquam aliquam et quo eligendi adipisci hic quis rerum, id reprehenderit neque
+          dolorum accusamus. Quaerat sequi ea soluta, porro optio ducimus qui quibusdam architecto commodi! Veniam dicta
+          fuga autem voluptatem. Voluptatem unde illum perspiciatis cum vel. Cumque nostrum quidem reprehenderit aut ea repellat
+          excepturi qui enim blanditiis possimus voluptas ullam porro aliquid, temporibus corrupti error? Deserunt nostrum
+          quos adipisci ipsam qui laboriosam cumque, voluptatibus ipsa earum? Provident eos nemo, dolorum commodi voluptatibus
+          fugit unde laboriosam culpa minus! Corrupti impedit sunt, ducimus porro praesentium eligendi quibusdam. Dolorem
+          odit accusamus similique quis debitis harum magni consequuntur laborum, ducimus velit nemo pariatur quo unde vel
+          excepturi adipisci, qui necessitatibus cum soluta perferendis. Mollitia molestias minima maxime cum earum? Sapiente
+          minus totam ratione porro suscipit consequatur recusandae, qui laboriosam ea tenetur et enim quo ducimus quia ex
+          hic, repellat vitae cumque pariatur quod dolorem aperiam nulla voluptatibus. Quae, commodi?</p>
+      </div>
+    </div>
+
+
+    <!-- Socket IO CDN -->
     <!-- AOS CDN -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- Jquery CDN -->
@@ -169,14 +202,14 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     <!-- js link -->
+    <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="js/trainer-landing.js"></script>
 
-<!-- script for chat -->
+    <!-- script for chat -->
 
     <script>
-        
-        $( document ).ready(function() {
-        console.log( "ready!" );
+      $(document).ready(function () {
+        console.log("ready!");
         var socket = io.connect()
         var nickForm = $('#setNick')
         var nickError = $('#nickError')
@@ -185,47 +218,45 @@
         var $messageForm = $('#send-message')
         var $messageBox = $('#message')
         var $chat = $('#chat')
-    
+        $('#contentWrap').hide()
 
-$(nickForm).submit(function(e){
-    e.preventDefault()
-    socket.emit('new-user', $(nickBox).val(), function(data){
-        if(data) {
-            $('#nickWrap').hide()
-            $('#contentWrap').show()
-        } else {
-            $(nickError).html('That username is already taken! Try again')
-        }
-    })
-    $(nickBox).val('')
-})
-
-socket.on('usernames', function(data){
-    var html = ''
-    for(i=0; i < data.length; i++){
-        html += data [i] + '<br/>'
-    }
-    $users.html(html)
-})
-
-
-        $messageForm.submit(function(e) {
-            e.preventDefault()
-            socket.emit('send-message', $messageBox.val())
-            $messageBox.val('')
+        $(nickForm).submit(function (e) {
+          // e.preventDefault()
+          socket.emit('new-user', $(nickBox).val(), function (data) {
+            if (data) {
+              $('#nickWrap').hide()
+              $('#contentWrap').show()
+            } else {
+              $(nickError).html('That username is already taken! Try again')
+            }
+          })
+          $(nickBox).val()
         })
-    
-        socket.on('new-message', function(data){
-            $(chat).append('<b>' + data.nick + ': </b>' + data.msg + "<br/>")
+
+        socket.on('usernames', function (data) {
+          var html = ''
+          for (i = 0; i < data.length; i++) {
+            html += data[i] + '<br/>'
+          }
+          $users.html(html)
         })
-    });
-        
-        
+
+
+        $messageForm.submit(function (e) {
+          e.preventDefault()
+          socket.emit('send-message', $messageBox.val())
+          $messageBox.val('')
+        })
+
+        socket.on('new-message', function (data) {
+          $(chat).append('<b>' + data.nick + ': </b>' + data.msg + "<br/>")
+        })
+      });
     </script>
     <!-- end chat script -->
-    
-    
-    
+
+
+
 
 
 </body>
