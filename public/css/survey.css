@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: URL("../images/workout\ 8.jpg");
+    background-image: URL("../images/workout3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right;
@@ -10,10 +10,11 @@ body {
     background-color: rgba(255, 255, 255, 0.925);
     padding: 3%;
     margin-top: 2%;
-    width: 30%;
+    margin-bottom: 5%;
+    width: 50%;
     border-radius: 10px;
 }
 
 .regtext {
-    color: white;
+    color:white;
 }
