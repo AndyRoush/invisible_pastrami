@@ -15,10 +15,10 @@ module.exports = function(sequelize, DataTypes) {
       addNotes: {
         type: DataTypes.TEXT,
         allowNull: false,
-      },
-      image: {
-          type: DataTypes.TEXT
       }
+      // image: {
+      //     type: DataTypes.TEXT
+      // }
     });
     return survey;
   };

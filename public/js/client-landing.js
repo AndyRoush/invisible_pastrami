@@ -21,24 +21,6 @@ function displayEmpty() {
 // $("#currentTime").append(timeCurrent)
 // })
 
-// This function grabs name from the database 
-function getName() {
-    $.get("/api/posts", function (data) {
-        console.log(data)
-        var name = "Welcome " + data[data.length-1].firstName + " " + data[data.length-1].lastName + "!"
-        if (!name || !name.length) {
-            displayEmpty()
-        } else {
-            $("#usersName").append(name)
-        }
-    })
-}
-getName()
-
-function displayEmpty() {
-    $("#usersName").empty()
-}
-
 google.charts.load('current', {'packages':['corechart']});
 google.charts.load("current", {packages:["calendar"]});
 google.charts.setOnLoadCallback(NutritionChart);
