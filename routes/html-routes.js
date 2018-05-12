@@ -39,6 +39,12 @@ module.exports = function (app) {
   app.get("/nutrition", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/nutrition.html"))
   })
+  app.get("/profile", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/userProfile.html"))
+  })
+  app.get("/workouts", function (req, res) {
+    res.sendFile(path.join(__dirname, "../public/workouts.html"))
+  })
 
   app.get("/profile", function (req, res) {
     res.sendFile(path.join(__dirname, "../public/userProfile.html"))

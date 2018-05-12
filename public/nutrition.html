@@ -14,6 +14,7 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <!-- style.css link -->
   <link rel="stylesheet" type="text/css" href="css/trainer.css">
+  <!--HUNG--> <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <title>Req.Body</title>
 </head>
@@ -25,13 +26,13 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
-      <img src="/images/r.b.logo.png" alt="logopic" class="brand-logo center">
+      <img src="../public/images/r.b.logo.png" alt="logopic" class="brand-logo center">
       <ul class="left hide-on-med-and-down">
         <li>
           <i class="material-icons center" id="blue">home</i>
         </li>
         <li>
-          <a href="badges.html" id="nav-links">Clients</a>
+          <a href="badges.html" id="nav-links">Dashboard</a>
         </li>
         <li>
           <i class="material-icons center">face</i>
@@ -84,41 +85,44 @@
                 class="circle" height="80px" width="80px">
             </div>
             <div class="col s6">
-              <h6 class="right-align">Andy Roush</h6>
-              <p class="right-align">HI dad</p>
+              <h5 class="right-align">Hung</h5>
+              <p class="right-align"><i class="material-icons center"></i>Client</p>
             </div>
           </div>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>Profile</h5>
-          <p>Stuff</p>
+        
+          <h5> <i class="material-icons" id="searchicon"></i>Profile</h5>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>Workout</h5>
-          <p>Stuff</p>
+          <h5><i class="material-icons center"></i>Workout</h5>
+          <p>4 out of 5 complete</p>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>Nutrition</h5>
-          <p>Stuff</p>
+        
+          <h5> <i class="material-icons" id="searchicon"></i>Nutrition</h5>
+          <img src="images/macros.png" alt="pie chart" height="150px" width="150px">
+          <p>Macro Summary</p>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>Videos</h5>
-          <p>Stuff</p>
+        
+          <h5> <i class="material-icons" id="searchicon"></i>Videos</h5>
+          <a class="black-text" href="videos.html">Link to videos</a>
         </div>
         <!-- chat -->
         <div class="divider"></div>
         <div class="section">
-          <h5>Chat with client</h5>
+          <h5><i class="material-icons center">people</i>Chat with Trainer</h5>
           <div id="nickWrap">
             <p>Enter a username: </p>
             <p id="nickError"></p>
-            <form action="#" id="setNick">
+            <form action="" id="setNick">
               <input size="35" id="nickname"></input>
-              <input type="submit"></input>
+              <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
             </form>
           </div>
         </div>
@@ -126,9 +130,9 @@
         <div id="contentWrap">
           <div id="chatWrap">
             <div id="chat">
-              <form action="#" id="send-message">
+              <form action="" id="send-message">
                 <input size="35" id="message"></input>
-                <input type="submit"></input>
+                <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
               </form>
             </div>
             <div id="users"></div>
@@ -137,8 +141,8 @@
         <!-- end chat -->
       </div>
     </div>
-
-
+    <div class="col s10 mid">
+    <!-- ARIES NUTRITION START -->
 <!-- Nutritional content goes here -->
 <h2>NUTRITION 101: Eat Right For Your Goals</h2> 
 You'll be given a custom meal plan from your REQ.BODY trainer that will cater to your goals.  It will include the nutritional facts, and meals you should be eating each day.
@@ -1269,9 +1273,19 @@ You'll be given a custom meal plan from your REQ.BODY trainer that will cater to
               </div>
 
 <!-- END OF NUTRI-CONTAINER -->
-            </div>
 
-   
+
+
+
+    <!-- ARIES NUTRITION END -->
+
+    </div>
+
+
+    
+
+
+
     <!-- AOS CDN -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- Jquery CDN -->
@@ -1279,9 +1293,9 @@ You'll be given a custom meal plan from your REQ.BODY trainer that will cater to
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     <!-- js link -->
-    <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="js/client-landing.js"></script>
 
-    <script>
+    <!-- <script>
       $(document).ready(function () {
         console.log("ready!");
         var socket = io.connect()
@@ -1327,7 +1341,7 @@ You'll be given a custom meal plan from your REQ.BODY trainer that will cater to
         })
       });
     </script>
-    <!-- end chat script -->
+    end chat script -->
 
 </body>
 

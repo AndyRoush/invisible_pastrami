@@ -1,84 +1,53 @@
 body {
     background-color: rgb(250,250,252);
 }
-
 .tall {
     background-color: teal;
     height: 50em;
     padding-left: 0.5em;
 }
-
 .short {
     background-color: sienna;
     height: 20em;
-
     margin-left: 10%;
 }
-
-
 .card{
-    height: 175px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
 }
-
 .name {
     padding-left : 5%;
 }
-
-/* .side {
-    background-color: gold;
-
-}
-
-.rss-feed {
-    background-color: aquamarine;
-
-}
-
-.mid{
-    background-color: royalblue; 
-
-}
-*/
-
 ul {
     height: 100%;
 }
-
 .mid-content {
-
     background-color: rgba(0, 0, 0, 0)
 }
-
 .rss-feed-content {
     background-color: white;
+    
 }
-
 .mid{
     padding-left: 20%;
     padding-right: 20%;
 }
-
 nav {
     background-color: rgb(52,72,97);
     margin-bottom: 5px;
 }
-
 #blue {
     background-color: rgb(58,152,213);
     width: 80px;
 }
-
 #right-nav {
     background-color: rgb(41,58,76);
     width: 100px;
 }
-
 .side {
     background-color: white;
     height: 800px;;
 }
-
 #activity {
     margin-top: 25px;
     margin-bottom: 25px;
@@ -86,4 +55,21 @@ nav {
 .mid-content {
     margin-left: 5%;
     margin-right: 5%;
+    padding: 0%; 
+}
+#nav-links {
+    margin-left: 60px;
+}
+.stuffs {
+    margin-left: 50%;
+}
+#chat {
+    height: 200px
+}
+#contentWrap {
+    display: none
+}
+#chatWrap {
+    float: left;
+    border: 1px #000 solid;
 }
