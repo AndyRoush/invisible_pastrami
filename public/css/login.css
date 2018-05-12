@@ -1,0 +1,50 @@
+/* log in form */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  main {
+    flex: 1 0 auto;
+  }
+  
+  body {
+    background: rgb(0, 0, 0);
+  }
+  
+  .input-field input[type=date]:focus+label,
+  .input-field input[type=text]:focus+label,
+  .input-field input[type=email]:focus+label,
+  .input-field input[type=password]:focus+label {
+    color: #e91e63;
+  }
+  
+  .input-field input[type=date]:focus,
+  .input-field input[type=text]:focus,
+  .input-field input[type=email]:focus,
+  .input-field input[type=password]:focus {
+    border-bottom: 2px solid #e91e63;
+    box-shadow: none;
+  }
+  
+  .parallax-container {
+    height: 600px;
+  }
+  
+  .section{
+    opacity: 0;
+    background-color: black;
+  }
+  
+  
+  .main-questions {
+    background-color: rgba(142, 142, 190, 0.301);
+    width: 
+  }
+
+  .maincont {
+      border-radius: 10px;
+  }
