@@ -29,20 +29,21 @@ function showResults(results) {
         var videoId = value.id.videoId
         
         var vidContainer = $("<div>")
-        vidContainer.addClass("vid-container col-lg-4")
+        vidContainer.addClass("vid-container col-lg-4 center-align")
         vidContainer.attr("id", "vid-" + index)
         
         // create iframe for video search result, append to video container
         var newVid = $("<iframe>")
-        newVid.attr("width", "550")
-        newVid.attr("height", "400")
+        newVid.attr("width", "750")
+        newVid.attr("height", "450")
         newVid.attr("frameborder", "0")
         newVid.attr("src", "http://www.youtube.com/embed/" + videoId)
         vidContainer.append(newVid)
  
         // append container to results div
-        $('.results').append('<p>' + title + '</p>')
+        $('.results').append('<h5 class="center-align">' + title + '</h5>')
         $('.results').append(vidContainer)
+        $('.results').append('<div class="divider"</div>')
 
     
     });

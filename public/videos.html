@@ -1,23 +1,232 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Youtube Videos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Materialize -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+  <!-- AOS CDN -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <!-- style.css link -->
+  <link rel="stylesheet" type="text/css" href="css/trainer.css">
+
+  <title>Req.Body</title>
 </head>
 
 <body>
-    <form id="search-term">
-        Search:
-        <br>
-        <input id="query" type="text">
-        <br>
-        <input type="submit" value="Submit">
-    </form>
-    <div id="search-results">
+  <!-- nav -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+      <img src="../public/images/r.b.logo.png" alt="logopic" class="brand-logo center">
+      <ul class="left hide-on-med-and-down">
+        <li>
+          <i class="material-icons center" id="blue">home</i>
+        </li>
+        <li>
+          <a href="badges.html" id="nav-links">Clients</a>
+        </li>
+        <li>
+          <i class="material-icons center">face</i>
+        </li>
+        <li>
+          <a href="collapsible.html" id="nav-links">Workout Manager</a>
+        </li>
+        <li>
+          <i class="material-icons center">fitness_center</i>
+        </li>
+        <li>
+          <a href="mobile.html" id="nav-links">Nutrition Manager</a>
+        </li>
+        <li>
+          <i class="material-icons center">restaurant</i>
+        </li>
+      </ul>
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#" id="right-nav">5:35 p.m.</a>
+        </li>
+        <li>
+          <i class="material-icons center" id="right-nav">notifications</i>
+        </li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>
+          <a href="sass.html">Sass</a>
+        </li>
+        <li>
+          <a href="badges.html">Components</a>
+        </li>
+        <li>
+          <a href="collapsible.html">Javascript</a>
+        </li>
+        <li>
+          <a href="mobile.html">Mobile</a>
+        </li>
+      </ul>
     </div>
-    <div class ="results"></div>
-    <script src="js/videos.js"></script>
+  </nav>
+
+  <div class="row">
+    <div class="col s2 side">
+      <div class="side-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s4">
+              <img src="https://i.pinimg.com/736x/dc/5c/ca/dc5ccad5bd921a27a657ecfada3f00de--live-life-anti-aging.jpg" alt="profile pic"
+                class="circle" height="80px" width="80px">
+            </div>
+            <div class="col s6">
+              <h6 class="right-align">Andy Roush</h6>
+              <p class="right-align">HI dad</p>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 2</h5>
+          <p>Stuff</p>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Section 3</h5>
+          <p>Stuff</p>
+        </div>
+        <!-- chat -->
+        <div class="divider"></div>
+        <div class="section">
+          <h5>Chat with client</h5>
+          <div id="nickWrap">
+            <p>Enter a username: </p>
+            <p id="nickError"></p>
+            <form action="#" id="setNick">
+              <input size="35" id="nickname"></input>
+              <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
+            </form>
+          </div>
+        </div>
+
+        <div id="contentWrap">
+          <div id="chatWrap">
+            <div id="chat">
+              <form action="#" id="send-message">
+                <input size="35" id="message"></input>
+                <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
+              </form>
+            </div>
+            <div id="users"></div>
+          </div>
+        </div>
+        <!-- end chat -->
+      </div>
+    </div>
+    
+    <!-- Youtube videos -->
+    <div class="col s7 mid">
+      <div class="mid-content">
+        <h4 id="activity">Video Search</h4>
+        <div>
+                <form id="search-term">
+                        Search:
+                        <br>
+                        <input id="query" type="text">
+                        <br>
+                        <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
+                    </form>
+                    <div id="search-results">
+                    </div>
+                    <div class ="results"></div>
+          </div>
+
+
+      </div>
+    </div>
+    <div class="col s3 rss-feed">
+      <h4 class="center">RSS-FEED</h4>
+      <div class="rss-feed-content">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut officia pariatur et odit unde beatae facilis, dolore
+          ipsum iste. Eos adipisci iste consequuntur, vero earum veritatis ipsum fuga soluta necessitatibus! Autem expedita,
+          officia voluptatum accusantium quisquam aliquam et quo eligendi adipisci hic quis rerum, id reprehenderit neque
+          dolorum accusamus. Quaerat sequi ea soluta, porro optio ducimus qui quibusdam architecto commodi! Veniam dicta
+          fuga autem voluptatem. Voluptatem unde illum perspiciatis cum vel. Cumque nostrum quidem reprehenderit aut ea repellat
+          excepturi qui enim blanditiis possimus voluptas ullam porro aliquid, temporibus corrupti error? Deserunt nostrum
+          quos adipisci ipsam qui laboriosam cumque, voluptatibus ipsa earum? Provident eos nemo, dolorum commodi voluptatibus
+          fugit unde laboriosam culpa minus! Corrupti impedit sunt, ducimus porro praesentium eligendi quibusdam. Dolorem
+          odit accusamus similique quis debitis harum magni consequuntur laborum, ducimus velit nemo pariatur quo unde vel
+          excepturi adipisci, qui necessitatibus cum soluta perferendis. Mollitia molestias minima maxime cum earum? Sapiente
+          minus totam ratione porro suscipit consequatur recusandae, qui laboriosam ea tenetur et enim quo ducimus quia ex
+          hic, repellat vitae cumque pariatur quod dolorem aperiam nulla voluptatibus. Quae, commodi?</p>
+      </div>
+    </div>
+
+
+
+    <!-- AOS CDN -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
+    <!-- js link -->
+    <script type="text/javascript" src="js/videos.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        console.log("ready!");
+        var socket = io.connect()
+        var nickForm = $('#setNick')
+        var nickError = $('#nickError')
+        var nickBox = $('#nickname')
+        var $users = $('#users')
+        var $messageForm = $('#send-message')
+        var $messageBox = $('#message')
+        var $chat = $('#chat')
+        $('#contentWrap').hide()
+
+        $(nickForm).submit(function (e) {
+          // e.preventDefault()
+          socket.emit('new-user', $(nickBox).val(), function (data) {
+            if (data) {
+              $('#nickWrap').hide()
+              $('#contentWrap').show()
+            } else {
+              $(nickError).html('That username is already taken! Try again')
+            }
+          })
+          $(nickBox).val()
+        })
+
+        socket.on('usernames', function (data) {
+          var html = ''
+          for (i = 0; i < data.length; i++) {
+            html += data[i] + '<br/>'
+          }
+          $users.html(html)
+        })
+
+
+        $messageForm.submit(function (e) {
+          e.preventDefault()
+          socket.emit('send-message', $messageBox.val())
+          $messageBox.val('')
+        })
+
+        socket.on('new-message', function (data) {
+          $(chat).append('<b>' + data.nick + ': </b>' + data.msg + "<br/>")
+        })
+      });
+    </script>
+    <!-- end chat script -->
+
 </body>
 
 </html>
