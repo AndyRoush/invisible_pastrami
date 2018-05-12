@@ -16,9 +16,7 @@ function displayEmpty() {
     $("#usersName").empty()
 }
 
-$(document).ready(function (){
-    var timeCurrent = moment().format()
-$("#currentTime").append(timeCurrent)
-
-
-})
+// $(document).ready(function (){
+//     var timeCurrent = moment().format()
+// $("#currentTime").append(timeCurrent)
+// })

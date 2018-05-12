@@ -25,22 +25,28 @@
       <a href="#" data-activates="mobile-demo" class="button-collapse">
         <i class="material-icons">menu</i>
       </a>
-      <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
+      <img src="../public/images/r.b.logo.png" alt="logopic" class="brand-logo center">
       <ul class="left hide-on-med-and-down">
         <li>
           <i class="material-icons center" id="blue">home</i>
         </li>
         <li>
+          <a href="badges.html" id="nav-links">Clients</a>
+        </li>
+        <li>
           <i class="material-icons center">face</i>
         </li>
         <li>
-          <a href="badges.html">Clients</a>
+          <a href="collapsible.html" id="nav-links">Workout Manager</a>
         </li>
         <li>
-          <a href="collapsible.html">Workout Manager</a>
+          <i class="material-icons center">fitness_center</i>
         </li>
         <li>
-          <a href="mobile.html">Nutrition Manager</a>
+          <a href="mobile.html" id="nav-links">Nutrition Manager</a>
+        </li>
+        <li>
+          <i class="material-icons center">restaurant</i>
         </li>
       </ul>
       <ul class="right hide-on-med-and-down">
@@ -72,43 +78,52 @@
     <div class="col s2 side">
       <div class="side-content">
         <div class="section">
-          <h5>Section 1</h5>
-          <p>Stuff</p>
+          <div class="row">
+            <div class="col s4">
+              <img src="https://i.pinimg.com/736x/dc/5c/ca/dc5ccad5bd921a27a657ecfada3f00de--live-life-anti-aging.jpg" alt="profile pic"
+                class="circle" height="80px" width="80px">
+            </div>
+            <div class="col s6">
+              <h6 class="right-align">Andy Roush</h6>
+              <p class="right-align"><i class="material-icons center">fitness_center</i>Trainer</p>
+            </div>
+          </div>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>Section 2</h5>
-          <p>Stuff</p>
+        
+          <h5> <i class="material-icons" id="searchicon">search</i>Client Search</h5>
         </div>
         <div class="divider"></div>
         <div class="section">
-          <h5>CHAT with Client</h5>
-          <!-- chat scrypt -->
-          <!-- //username entry -->
+          <h5><i class="material-icons center">payment</i>Payment tracker</h5>
+        </div>
+        <!-- chat -->
+        <div class="divider"></div>
+        <div class="section">
+          <h5><i class="material-icons center">people</i>Chat with client</h5>
           <div id="nickWrap">
             <p>Enter a username: </p>
             <p id="nickError"></p>
-            <form id="setNick">
+            <form action="" id="setNick">
               <input size="35" id="nickname"></input>
-              <input type="submit"></input>
+              <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
             </form>
           </div>
-          <!-- //chat  -->
-          <div id="contentWrap">
-            <div id="chatWrap">
+        </div>
 
-              <div id="chat"></div>
-              <form id="send-message">
+        <div id="contentWrap">
+          <div id="chatWrap">
+            <div id="chat">
+              <form action="" id="send-message">
                 <input size="35" id="message"></input>
-                <input type="submit"></input>
+                <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
               </form>
             </div>
             <div id="users"></div>
           </div>
-
-          <!-- end chat scrypt -->
-
         </div>
+        <!-- end chat -->
       </div>
     </div>
     <div class="col s7 mid">
@@ -117,7 +132,25 @@
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s2">
-              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <img src="images/workout1.jpg" alt="" class="circle" height="100px" width="100px">
+              <!-- notice the "circle" class -->
+            </div>
+            <div class="col s8">
+              <span class="black-text">
+                Allan has finished his workout for the day!
+              </span>
+            </div>
+            <div class="col s2 center">
+              Hooray
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row valign-wrapper">
+            <div class="col s2">
+              <img src="images/workout1.jpg" alt="" class="circle" height="100px" width="100px">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
@@ -132,7 +165,7 @@
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s2">
-              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <img src="images/workout1.jpg" alt="" class="circle" height="100px" width="100px">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
@@ -147,22 +180,7 @@
         <div class="card-panel grey lighten-5 z-depth-1">
           <div class="row valign-wrapper">
             <div class="col s2">
-              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
-              <!-- notice the "circle" class -->
-            </div>
-            <div class="col s10">
-              <span class="black-text">
-                This is a square image. Add the "circle" class to it to make it appear circular.
-              </span>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card-panel grey lighten-5 z-depth-1">
-          <div class="row valign-wrapper">
-            <div class="col s2">
-              <img src="images/workout1.jpg" alt="" class="circle responsive-img">
+              <img src="images/workout1.jpg" alt="" class="circle" height="100px" width="100px">
               <!-- notice the "circle" class -->
             </div>
             <div class="col s10">
@@ -194,7 +212,7 @@
     </div>
 
 
-    <!-- Socket IO CDN -->
+
     <!-- AOS CDN -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- Jquery CDN -->
@@ -202,10 +220,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
     <!-- js link -->
-    <script src="/socket.io/socket.io.js"></script>
-    <script type="text/javascript" src="js/trainer-landing.js"></script>
-
-    <!-- script for chat -->
+    <script type="text/javascript" src="public/js/main.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -255,13 +270,6 @@
     </script>
     <!-- end chat script -->
 
-
-
-
-
 </body>
 
 </html>
-
-
-Add Comment

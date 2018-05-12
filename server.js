@@ -45,8 +45,8 @@ app.use(bodyParser.json())
 app.use(express.static("./public"))
 
 //passport login
-app.use(passport.initialize())
-app.use(passport.session())
+// app.use(passport.initialize())
+// app.use(passport.session())
 
 // Routes
 // =============================================================
@@ -63,42 +63,42 @@ db.sequelize.sync({ force: true }).then(function() {
 })
 
 // chat script
-var express = require('express')
-app1 = express()
-server = require('http').createServer(app)
-io = require('socket.io').listen(server)
-nicknames = []
+// var express = require('express')
+// app1 = express()
+// server = require('http').createServer(app)
+// io = require('socket.io').listen(server)
+// nicknames = []
 
 // server.listen(3000)
 
-app1.get('/', function(req, res){
-res.sendFile(__dirname + '/public/trainer-landing.html')
-})
+// app1.get('/', function(req, res){
+// res.sendFile(__dirname + '/public/trainer-landing.html')
+// })
 
-io.sockets.on('connection', function(socket) {
-    socket.on('new-user', function(data, callback){
-        if (nicknames.indexOf(data) != -1){
-            callback(false)
-        } else{
-            callback(true)
-            socket.nickname = data
-            nicknames.push(socket.nickname)
-            updateNicknames()
-        }
-    })
+// io.sockets.on('connection', function(socket) {
+//     socket.on('new-user', function(data, callback){
+//         if (nicknames.indexOf(data) != -1){
+//             callback(false)
+//         } else{
+//             callback(true)
+//             socket.nickname = data
+//             nicknames.push(socket.nickname)
+//             updateNicknames()
+//         }
+//     })
     
-    function updateNicknames() {
-        io.sockets.emit('usernames', nicknames)
+//     function updateNicknames() {
+//         io.sockets.emit('usernames', nicknames)
 
-    }
+//     }
 
-    socket.on('send-message', function(data) {
-        io.sockets.emit('new-message', {msg: data, nick: socket.nickname})
+//     socket.on('send-message', function(data) {
+//         io.sockets.emit('new-message', {msg: data, nick: socket.nickname})
         
-    })
-    socket.on('disconnect', function(data) {
-        if(!socket.nickname) return
-        nicknames.splice(nicknames.indexOf(socket.nickname), 1)
-    }
-)
-})
+//     })
+//     socket.on('disconnect', function(data) {
+//         if(!socket.nickname) return
+//         nicknames.splice(nicknames.indexOf(socket.nickname), 1)
+//     }
+// )
+// })

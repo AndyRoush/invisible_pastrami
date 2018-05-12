@@ -25,21 +25,6 @@ body {
     padding-left : 5%;
 }
 
-/* .side {
-    background-color: gold;
-
-}
-
-.rss-feed {
-    background-color: aquamarine;
-
-}
-
-.mid{
-    background-color: royalblue; 
-
-}
-*/
 
 ul {
     height: 100%;
@@ -88,6 +73,13 @@ nav {
     margin-right: 5%;
 }
 
+#nav-links {
+    margin-left: 60px;
+}
+
+.stuffs {
+    margin-left: 50%;
+}
 #chat {
     height: 200px
 }
@@ -99,4 +91,12 @@ nav {
 #chatWrap {
     float: left;
     border: 1px #000 solid;
+}
+
+
+
+.vid-container {
+    color: azure;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -11,10 +11,25 @@ body {
     size: 50%;
 }
 
-.homeTraining:hover {
-    color: red;
-}
 
 .logopic {
     width: 100%;
+    position: relative;
+    z-index: -1
 }
+
+#fadeup {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.page-footer {
+    background-color: black;
+    margin-top: 10%;
+}
+
+#searchicon {
+    margin-right: 15px;
+}
+

@@ -38,19 +38,19 @@ $(document).ready(function () {
 
     //on click for create account to bring them to the set up page. 
     $('#createAccount').click(function () {
-        window.open('register.html');
+        window.open('/register');
         return false;
     })
 
     // On click from landing to signup
     $('#signupButton').click(function () {
-        window.open('register.html');
+        window.open('/register');
         return false;
     })
 
     //on click from landing page to bring existing user to log in page
     $('#loginButton').click(function () {
-        window.open('login.html');
+        window.open('/login');
         return false;
     })
 
