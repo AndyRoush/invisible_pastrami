@@ -19,10 +19,10 @@ CREATE TABLE reqdotbody_db.survey (
     id INTEGER(11) PRIMARY KEY AUTO_INCREMENT,
     -- Weight loss, bulking, toning
     goal VARCHAR(30) NOT NULL,
-    -- Optional: Weight and height specifications
-    weight INTEGER(11),
-    height VARCHAR(30),
+    image VARCHAR(30),
+    diet VARCHAR(30) NOT NULL,
+    exercisePref VARCHAR(30) NOT NULL,
     -- Additional comments the user has about their needs
-    comments VARCHAR(500)
+    addNotes VARCHAR(500)
 );
 

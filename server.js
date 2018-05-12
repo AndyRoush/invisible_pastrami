@@ -13,6 +13,7 @@ var passport = require('passport')
 var bcrypt = require('bcrypt')
 var saltRounds = 10
 var path = require('path')
+var fileUpload = require('express-fileupload');
 
 // require('dotenv').config()
 // var search = require('youtube-search');
@@ -38,6 +39,7 @@ var PORT = process.env.PORT || 3000
 var db = require("./models")
 
 // middleware
+app.use(fileUpload());
 app.use(bodyParser.urlencoded({ extended: true }))
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json())
