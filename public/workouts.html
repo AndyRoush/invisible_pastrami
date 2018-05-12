@@ -2,220 +2,251 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Materialize -->
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-  <!-- AOS CDN -->
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-  <!-- style.css link -->
-  <link rel="stylesheet" type="text/css" href="css/workout.css">
-  <!--HUNG--> <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Materialize -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
+    <!-- AOS CDN -->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <!-- style.css link -->
+    <link rel="stylesheet" type="text/css" href="css/workout.css">
+    <!--HUNG-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <title>Req.Body</title>
+    <title>Req.Body</title>
 </head>
 
 <body>
-  <!-- nav -->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" data-activates="mobile-demo" class="button-collapse">
-        <i class="material-icons">menu</i>
-      </a>
-      <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
-      <ul class="left hide-on-med-and-down">
-        <li>
-          <i class="material-icons center" id="blue">home</i>
-        </li>
-        <li>
-          <a href="badges.html" id="nav-links">Dashboard</a>
-        </li>
-        <li>
-          <i class="material-icons center">face</i>
-        </li>
-        <li>
-          <a href="collapsible.html" id="nav-links">My Workouts</a>
-        </li>
-        <li>
-          <i class="material-icons center">fitness_center</i>
-        </li>
-        <li>
-          <a href="mobile.html" id="nav-links">My Nutrition</a>
-        </li>
-        <li>
-          <i class="material-icons center">restaurant</i>
-        </li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="#" id="right-nav">5:35 p.m.</a>
-        </li>
-        <li>
-          <i class="material-icons center" id="right-nav">notifications</i>
-        </li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li>
-          <a href="sass.html">Sass</a>
-        </li>
-        <li>
-          <a href="badges.html">Components</a>
-        </li>
-        <li>
-          <a href="collapsible.html">Javascript</a>
-        </li>
-        <li>
-          <a href="mobile.html">Mobile</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <!-- nav -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" data-activates="mobile-demo" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+            <img src="images/r.b.logo.png" alt="logopic" class="brand-logo center">
+            <ul class="left hide-on-med-and-down">
+                <li>
+                    <a href="/">
+                        <i class="material-icons center" id="blue" href="/">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="badges.html" id="nav-links">Dashboard</a>
+                </li>
+                <li>
+                    <i class="material-icons center">face</i>
+                </li>
+                <li>
+                    <a href="collapsible.html" id="nav-links">My Workouts</a>
+                </li>
+                <li>
+                    <i class="material-icons center">fitness_center</i>
+                </li>
+                <li>
+                    <a href="mobile.html" id="nav-links">My Nutrition</a>
+                </li>
+                <li>
+                    <i class="material-icons center">restaurant</i>
+                </li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#" id="right-nav">5:35 p.m.</a>
+                </li>
+                <li>
+                    <i class="material-icons center" id="right-nav">notifications</i>
+                </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li>
+                    <a href="sass.html">Sass</a>
+                </li>
+                <li>
+                    <a href="badges.html">Components</a>
+                </li>
+                <li>
+                    <a href="collapsible.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="mobile.html">Mobile</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="row">
-    <div class="col s2 side">
-      <div class="side-content">
-        <div class="section">
-          <div class="row">
-            <div class="col s4">
-              <img src="https://i.pinimg.com/736x/dc/5c/ca/dc5ccad5bd921a27a657ecfada3f00de--live-life-anti-aging.jpg" alt="profile pic"
-                class="circle" height="80px" width="80px">
-            </div>
-            <div class="col s6">
-              <h5 class="right-align">Hung</h5>
-              <p class="right-align"><i class="material-icons center"></i>Client</p>
-            </div>
-          </div>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-        
-          <h5> <i class="material-icons" id="searchicon"></i><a href="/userProfile">Profile</a></h5>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-          <h5><i class="material-icons center"></i><a href="/workouts">Workouts</a></h5>
-          <p>4 out of 5 complete</p>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-        
-          <h5> <i class="material-icons" id="searchicon"></i><a href="/nutrition">Nutrition</a></h5>
-          <img src="images/macros.png" alt="pie chart" height="150px" width="150px">
-          <p>Macro Summary</p>
-        </div>
-        <div class="divider"></div>
-        <div class="section">
-        
-          <h5> <i class="material-icons" id="searchicon"></i>Videos</h5>
-          <a class="black-text" href="videos.html">Link to videos</a>
-        </div>
-        <!-- chat -->
-        <div class="divider"></div>
-        <div class="section">
-          <h5><i class="material-icons center">people</i>Chat with Trainer</h5>
-          <div id="nickWrap">
-            <p>Enter a username: </p>
-            <p id="nickError"></p>
-            <form action="" id="setNick">
-              <input size="35" id="nickname"></input>
-              <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
-            </form>
-          </div>
-        </div>
-
-        <div id="contentWrap">
-          <div id="chatWrap">
-            <div id="chat">
-              <form action="" id="send-message">
-                <input size="35" id="message"></input>
-                <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
-              </form>
-            </div>
-            <div id="users"></div>
-          </div>
-        </div>
-        <!-- end chat -->
-      </div>
-    </div>
- 
-    <!-- ARIES NUTRITION START -->
-
-    <div class="col s7 mid">
-        <div class="mid-content">
-            <!--CODE FOR MID SECTION CARDS  -->
-            <div class="row">
-                <!-- card one -->
-                <div class="col s4 mid">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./images/push-up.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Push-Ups<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">How To-Video</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Push-Ups</span>
-                        <p>
-                            <input class="with-gap" name="group1" type="radio" id="push-up1" checked />
-                            <label for="push-up1">Crushed It!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group1" type="radio" id="push-up2" checked />
-                            <label for="push-up2">Strugglin'!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group1" type="radio" id="push-up3" checked />
-                            <label for="push-up3">Skipped!</label>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!-- card 2 -->
-            <div class="col s4 mid">
-                    <div class="card">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./images/squat.jpg">
+    <div class="row">
+        <div class="col s2 side">
+            <div class="side-content">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s4">
+                            <img src="/images/workout7.jpg" alt="profile pic" class="circle" height="160px" width="160px">
                         </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Squats<i class="material-icons right">more_vert</i></span>
-                            <p><a href="#">How To-Video</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Squats</span>
-    
-                            <p>
-                                <input class="with-gap" name="group2" type="radio" id="squat1" checked />
-                                <label for="squat1">Crushed It!</label>
-                            </p>
-                            <p>
-                                <input class="with-gap" name="group2" type="radio" id="squat2" checked />
-                                <label for="squat2">Strugglin'!</label>
-                            </p>
-                            <p>
-                                <input class="with-gap" name="group2" type="radio" id="squat3" checked />
-                                <label for="squat3">Skipped!</label>
+                        <div class="col s6">
+                            <h5 class="right-align"></h5>
+                            <p class="right-align">
+                                <i class="material-icons center"></i>
                             </p>
                         </div>
                     </div>
                 </div>
-<!-- column 3 -->
-                <div class="col s4 mid">
+                <div class="divider"></div>
+                <div class="section">
+
+                    <h5>
+                        <i class="material-icons" id="searchicon"></i>
+                        <a href="/profile">Profile</a>
+                    </h5>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>
+                        <i class="material-icons center"></i>
+                        <a href="/workouts">Workouts</a>
+                    </h5>
+                    <p>4 out of 5 complete</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+
+                    <h5>
+                        <i class="material-icons" id="searchicon"></i>
+                        <a href="/nutrition">Nutrition</a>
+                    </h5>
+                    <img src="images/macros.png" alt="pie chart" height="150px" width="150px">
+                    <p>Macro Summary</p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+
+                    <h5>
+                        <i class="material-icons" id="searchicon"></i>
+                        <a href="/videos">Videos</a>
+                    </h5>
+                    <a class="black-text" href="/videos">Link to videos</a>
+                </div>
+                <!-- chat -->
+                <div class="divider"></div>
+                <div class="section">
+                    <h5>
+                        <i class="material-icons center">people</i>Chat with Trainer</h5>
+                    <div id="nickWrap">
+                        <p>Enter a username: </p>
+                        <p id="nickError"></p>
+                        <form action="" id="setNick">
+                            <input size="35" id="nickname"></input>
+                            <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
+                        </form>
+                    </div>
+                </div>
+
+                <div id="contentWrap">
+                    <div id="chatWrap">
+                        <div id="chat">
+                            <form action="" id="send-message">
+                                <input size="35" id="message"></input>
+                                <input type="submit" value="Submit" class="waves-effect waves-light btn light-blue darken-1">
+                            </form>
+                        </div>
+                        <div id="users"></div>
+                    </div>
+                </div>
+                <!-- end chat -->
+            </div>
+        </div>
+
+        <!-- ARIES NUTRITION START -->
+
+        <div class="col s7 mid">
+            <div class="mid-content">
+                <!--CODE FOR MID SECTION CARDS  -->
+                <div class="row">
+                    <!-- card one -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/push-up.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Push-Ups
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Push-Ups</span>
+                                <p>
+                                    <input class="with-gap" name="group1" type="radio" id="push-up1" checked />
+                                    <label for="push-up1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group1" type="radio" id="push-up2" checked />
+                                    <label for="push-up2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group1" type="radio" id="push-up3" checked />
+                                    <label for="push-up3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/squat.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Squats
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Squats</span>
+
+                                <p>
+                                    <input class="with-gap" name="group2" type="radio" id="squat1" checked />
+                                    <label for="squat1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group2" type="radio" id="squat2" checked />
+                                    <label for="squat2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group2" type="radio" id="squat3" checked />
+                                    <label for="squat3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column 3 -->
+                    <div class="col s4 mid">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="./images/clean.jpeg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Clean<i class="material-icons right">more_vert</i></span>
-                                <p><a href="#">How To-Video</a></p>
+                                <span class="card-title activator grey-text text-darken-4">Clean
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Clean</span>
-        
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Clean</span>
+
                                 <p>
                                     <input class="with-gap" name="group3" type="radio" id="clean1" checked />
                                     <label for="clean1">Crushed It!</label>
@@ -231,193 +262,225 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- End of row 1 -->
+                <div class="row">
+                    <!-- card one -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/tricep.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Triceps
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Triceps</span>
+                                <p>
+                                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
+                                    <label for="test5">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
+                                    <label for="test5">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
+                                    <label for="test5">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/pulldown.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Pulldown
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Pulldown</span>
+                                <p>
+                                    <input class="with-gap" name="group5" type="radio" id="pulldown1" checked />
+                                    <label for="pulldown1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group5" type="radio" id="pulldown2" checked />
+                                    <label for="pulldown2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group5" type="radio" id="pulldown3" checked />
+                                    <label for="pulldown3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/snatch.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Snatch
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Snatch</span>
+                                <p>
+                                    <input class="with-gap" name="group6" type="radio" id="snatch1" checked />
+                                    <label for="snatch1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group6" type="radio" id="snatch12" checked />
+                                    <label for="snatch2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group6" type="radio" id="snatch3" checked />
+                                    <label for="snatch3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row 2 -->
+                <div class="row">
+                    <!-- card one -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/box-jump.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Box Jump
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Box Jump</span>
+                                <p>
+                                    <input class="with-gap" name="group7" type="radio" id="box-jump1" checked />
+                                    <label for="box-jump1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group7" type="radio" id="box-jump2" checked />
+                                    <label for="box-jump2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group7" type="radio" id="box-jump3" checked />
+                                    <label for="box-jump3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/deadlift.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Deadlift
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Deadlift</span>
+                                <p>
+                                    <input class="with-gap" name="group8" type="radio" id="deadlift1" checked />
+                                    <label for="deadlift1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group8" type="radio" id="deadlift2" checked />
+                                    <label for="deadlift2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group8" type="radio" id="deadlift3" checked />
+                                    <label for="deadlift3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s4 mid">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="./images/glute.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Glutes
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="/videos">How To-Video</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">
+                                    <i class="material-icons right">close</i>Glutes</span>
+                                <p>
+                                    <input class="with-gap" name="group9" type="radio" id="glutes1" checked />
+                                    <label for="glutes1">Crushed It!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group9" type="radio" id="glutes2" checked />
+                                    <label for="glutes2">Strugglin'!</label>
+                                </p>
+                                <p>
+                                    <input class="with-gap" name="group9" type="radio" id="glutes3" checked />
+                                    <label for="glutes3">Skipped!</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
         </div>
-<!-- End of row 1 -->
-<div class="row">
-        <!-- card one -->
-        <div class="col s4 mid">
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/tricep.jpeg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Triceps<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">How To-Video</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Triceps</span>
-                <p>
-                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
-                    <label for="test5">Crushed It!</label>
-                </p>
-                <p>
-                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
-                    <label for="test5">Strugglin'!</label>
-                </p>
-                <p>
-                    <input class="with-gap" name="group4" type="radio" id="triceps" checked />
-                    <label for="test5">Skipped!</label>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- card 2 -->
-    <div class="col s4 mid">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./images/pulldown.png">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Pulldown<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">How To-Video</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Pulldown</span>
-                    <p>
-                        <input class="with-gap" name="group5" type="radio" id="pulldown1" checked />
-                        <label for="pulldown1">Crushed It!</label>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="group5" type="radio" id="pulldown2" checked />
-                        <label for="pulldown2">Strugglin'!</label>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="group5" type="radio" id="pulldown3" checked />
-                        <label for="pulldown3">Skipped!</label>
-                    </p>
-                </div>
-            </div>
-        </div>
-<!-- card 3 -->
-        <div class="col s4 mid">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./images/snatch.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Snatch<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">How To-Video</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Snatch</span>
-                        <p>
-                            <input class="with-gap" name="group6" type="radio" id="snatch1" checked />
-                            <label for="snatch1">Crushed It!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group6" type="radio" id="snatch12" checked />
-                            <label for="snatch2">Strugglin'!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group6" type="radio" id="snatch3" checked />
-                            <label for="snatch3">Skipped!</label>
-                        </p>
-                    </div>
-                </div>
-            </div>
-</div>
-<!-- row 2 -->
-<div class="row">
-        <!-- card one -->
-        <div class="col s4 mid">
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="./images/box-jump.jpg">
-            </div>
-            <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Box Jump<i class="material-icons right">more_vert</i></span>
-                <p><a href="#">How To-Video</a></p>
-            </div>
-            <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Box Jump</span>
-                <p>
-                    <input class="with-gap" name="group7" type="radio" id="box-jump1" checked />
-                    <label for="box-jump1">Crushed It!</label>
-                </p>
-                <p>
-                    <input class="with-gap" name="group7" type="radio" id="box-jump2" checked />
-                    <label for="box-jump2">Strugglin'!</label>
-                </p>
-                <p>
-                    <input class="with-gap" name="group7" type="radio" id="box-jump3" checked />
-                    <label for="box-jump3">Skipped!</label>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- card 2 -->
-    <div class="col s4 mid">
-            <div class="card">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="./images/deadlift.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Deadlift<i class="material-icons right">more_vert</i></span>
-                    <p><a href="#">How To-Video</a></p>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Deadlift</span>
-                    <p>
-                        <input class="with-gap" name="group8" type="radio" id="deadlift1" checked />
-                        <label for="deadlift1">Crushed It!</label>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="group8" type="radio" id="deadlift2" checked />
-                        <label for="deadlift2">Strugglin'!</label>
-                    </p>
-                    <p>
-                        <input class="with-gap" name="group8" type="radio" id="deadlift3" checked />
-                        <label for="deadlift3">Skipped!</label>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col s4 mid">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="./images/glute.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Glutes<i class="material-icons right">more_vert</i></span>
-                        <p><a href="#">How To-Video</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i>Glutes</span>
-                        <p>
-                            <input class="with-gap" name="group9" type="radio" id="glutes1" checked />
-                            <label for="glutes1">Crushed It!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group9" type="radio" id="glutes2" checked />
-                            <label for="glutes2">Strugglin'!</label>
-                        </p>
-                        <p>
-                            <input class="with-gap" name="group9" type="radio" id="glutes3" checked />
-                            <label for="glutes3">Skipped!</label>
-                        </p>
-                    </div>
-                </div>
-            </div>
-</div>
         <!--  -->
-    </div>
-</div>
-        <!--  -->
 
 
 
 
-    <!-- ARIES NUTRITION END -->
-    <div class="col s3 rss-feed">
+        <!-- ARIES NUTRITION END -->
+        <div class="col s3 rss-feed">
 
-        <div class="rss-feed-content">
-      <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="78755/"></script> <!-- end feedwind code -->
+            <div class="rss-feed-content">
+                <!-- start feedwind code -->
+                <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" data-fw-param="78755/"></script>
+                <!-- end feedwind code -->
+            </div>
         </div>
-      </div>
     </div>
-    
 
-    
+
+
 
 
 

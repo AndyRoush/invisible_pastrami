@@ -15,21 +15,6 @@ var saltRounds = 10
 var path = require('path')
 var fileUpload = require('express-fileupload');
 
-// require('dotenv').config()
-// var search = require('youtube-search');
-// var youtube = require('youtube-iframe-player');
-
-// var opts = {
-//   maxResults: 10,
-//   key: process.env.YOUTUBE_API
-// };
- 
-// search('biceps', opts, function(err, results) {
-//   if(err) return console.log(err);
-//   console.log(results[0].id);
-// });
-
-
 // Sets up the Express App
 // =============================================================
 var app = express()
@@ -46,10 +31,6 @@ app.use(bodyParser.json())
 // Static directory
 app.use(express.static("./public"))
 
-//passport login
-// app.use(passport.initialize())
-// app.use(passport.session())
-
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app)
@@ -64,6 +45,8 @@ db.sequelize.sync({ force: true }).then(function() {
   })
 })
 
+// Future Chat Functionality
+// =============================================================
 // chat script
 // var express = require('express')
 // app1 = express()
